@@ -1,0 +1,310 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+  --bg-color: #ffffff;
+  --text-color: #22100d;
+  --second-color:#685f78;
+  --main-color: #027bfe;
+  --big-font:3.4rem;
+  --h2-font:2.6rem;
+  --p-font:1.1rem;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Combine header and instructor background styles */
+.header, .instructor {
+  background-color: var(--bg-color);
+}
+
+#nav1{
+  margin-left: 10px;
+}
+
+#nav2{
+  margin-left: 220px;
+}
+
+#nav2 li a,#nav3 li a{
+  font-weight: 500;
+  font-size: var(--p-font);
+}
+
+.endnav2{
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+.endnav2 li a{
+  margin-left: 10px;
+  color: var(--bg-color);
+}
+.endnav2 li a:hover{
+  color: rgb(194, 222, 247);
+}
+
+/* Remove list decorations only in the navbar */
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* home */
+.home{
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  align-items:center ;
+  
+}
+
+.home-text h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: var(--big-font);
+  margin: 15px 0 15px;
+
+}
+.home-text h1 span{
+  color: #027bfe;
+}
+
+
+.home-text p{
+  color: var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}
+.latter form{
+  margin-top: 50px;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+
+}
+
+.latter form input:first-child{
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  padding: 16px 140px 16px 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+}
+
+.latter form input:last-child{
+  position: absolute;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: var(--main-color);
+  color: var(--bg-color);
+  padding: 16px 40px ;
+  border-radius: 30px;
+  cursor: pointer;
+  top: 2px;
+  right: 1px;
+
+}
+.home-img~img{
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+  
+}
+
+.lefthome{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.righthome{
+  margin-top: 0px;
+  margin-left: 100px;
+
+}
+
+/* instructor */
+.instructor{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: #333;
+  padding-top: 30px;
+}
+
+.instructor h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* Remove box shadow */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.container1h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container1 p {
+  text-align: justify;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  color: var(--main-color);
+  border-bottom: 2px solid #007bff;
+}
+
+.content {
+  padding: 10px 20px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center align the list */
+  margin: 0 auto; /* Center the entire ul */
+}
+
+.content ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align the list items to the start */
+  padding-left: 20px; /* Add padding to narrow the starting */
+}
+
+.content ul li::before {
+  content: "●";
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content{
+  margin-left: 500px;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.btn{
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+/* Add hidden class to hide content sections */
+.hidden {
+  display: none;
+}
+
+/* contact */
+.contact{
+  padding: 30px 11% 10px;
+  
+  background-color: #1E2641;
+  margin-top: 100px;
+}
+.main-contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px,auto));
+  gap: 2rem;
+
+}
+
+.conatct-content img{
+  height: auto;
+  width: 160px;
+  max-width: 100%;
+  margin-bottom: 30px;
+
+}
+
+.contact-content li{
+  margin-bottom: 18px;
+
+}
+.contact-content li a{
+  display: block;
+  color: var(--bg-color);
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .40s ease;
+  text-decoration: none;
+
+}
+.contact-content li a:hover{
+  transform: translateX(10px);
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.last-text p{
+  text-align: center;
+  padding: 18px;
+  color: var(--second-color);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+

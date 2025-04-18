@@ -1,0 +1,4 @@
+.mentor-card a {
+  text-decoration: none !important;
+  color: inherit !important; /* Optional: to inherit the color from the parent element */
+}

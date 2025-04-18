@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Prompt Engineering for Developers</title>
+  <link rel="stylesheet" href="./mentorcourseactivity.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+/>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+
+</head>
+<body>
+  <div class="shadow bg-body rounded">
+    <nav class="navbar navbar-expand-lg justify-content-between">
+      <a class="navbar-brand ms-4" id="nav1" href="#"
+        ><img
+          src="./images/logo.png"
+          alt=""
+          srcset=""
+          width="200"
+          height="50"
+      /></a>
+
+      <ul class="navbar-nav me-5" id="nav2">
+        <li class="nav-item ">
+          <a class="nav-link me-4 " href="./1home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4 active" href="./mentorcourse.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="./about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./helpcenter.html">Help Center</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav me-5 d-flex" id="nav3">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user" style="font-size: 20px;"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href="./profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li><a class="dropdown-item" href="./3acourse.html"><i class="fa-solid fa-book"></i> My Courses</a></li>
+            <li><a class="dropdown-item" href="./analytics.html"><i class="fa-solid fa-chart-simple"></i> Analytics</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item logout text-danger" href="./1home copy.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+          </ul>
+        </div>
+        <div class="endn">
+          <li class="nav-item ">
+            <a class="nav-link me-4" href="./notification.html"><i class="fa-regular fa-bell" style="font-size: 22px;"></i></a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-container">
+    <div class="profile-section">
+      <div class="profile-picture"></div>
+      <div class="info">
+        <span class="role">Instructor</span>
+        <div class="rating">
+          <span>4.5</span>
+          <span class="stars">★★★★★</span>
+        </div>
+      </div>
+    </div>
+    <div class="action-section">
+      <a href="./mentorpublish.html">
+      <button class="create-course-button ">+ Create a New Course</button>
+      </a>
+    </div>
+  </div>
+
+  
+
+
+  <div class="container">
+    <div class="right"><img width="250px" src="./images/openai.webp " alt=""></div>
+
+    <div class="left">
+    <div class="header">
+      <div>
+        <h1>ChatGPT Prompt Engineering for Developers</h1>
+        <p>Learn the fundamentals of prompt engineering for ChatGPT. Learn effective prompting, and how to use LLMs for summarizing, inferring, transforming, and expanding.</p>
+      </div>
+      <!-- <img width="50px" src="openai.webp" alt="OpenAI Logo"> -->
+    </div>
+
+    <div class="tags">
+      <span class="tag">GenAI Applications</span>
+      <span class="tag">Prompt Engineering</span>
+      <span class="tag">Transformers</span>
+    </div>
+
+
+
+    <div class="button-container">
+      <button class="button review-button"><i class="fas fa-star text-warning" style="font-size: 20px;"></i> <span class="review-rating">3.5</span></button>
+      <button class="button review-button"> <i class="fa-solid fa-user " style="font-size: 20px;"></i><span class="review-rating ms-1">30</span></button>
+      <button class="button" id="view-syllabus-btn">Comments</button>
+    </div>
+
+    <div class="syllabus" id="syllabus">
+      <div class="syllabus-item">
+        <div>
+        <h4>Dinesh</h4> 
+        <p>Master the art of crafting effective prompts with our Chat GBT Prompt course</p>
+        </div>
+        <div>
+          <h6><span class="text-warning">★</span>4.5</h6>
+        </div>
+      </div>
+
+      <div class="syllabus-item">
+        <div>
+        <h4>Dinesh</h4> 
+        <p>Master the art of crafting effective prompts with our Chat GBT Prompt course</p>
+        </div>
+        <div>
+          <h6><span class="text-warning">★</span>4.5 </h6>
+        </div>
+      </div>
+
+
+      <div class="syllabus-item">
+        <div>
+        <h4>Dinesh</h4> 
+        <p>Master the art of crafting effective prompts with our Chat GBT Prompt course</p>
+        </div>
+        <div>
+          <h6><span class="text-warning">★</span>4.5</h6>
+        </div>
+      </div>
+
+
+      <div class="syllabus-item">
+        <div>
+        <h4>Dinesh</h4> 
+        <p>Master the art of crafting effective prompts with our Chat GBT Prompt course</p>
+        </div>
+        <div>
+          <h6><span class="text-warning">★</span>4.5</h6>
+        </div>
+      </div>
+
+
+      <div class="syllabus-item">
+        <div>
+        <h4>Dinesh</h4> 
+        <p>Master the art of crafting effective prompts with our Chat GBT Prompt course</p>
+        </div>
+        <div>
+          <h6><span class="text-warning">★</span>4.5</h6>
+        </div>
+      </div>
+
+      
+      
+    </div>
+    </div>
+  </div>
+
+  <script src="./mentorcourseactivity.js"></script>
+</body>
+</html>

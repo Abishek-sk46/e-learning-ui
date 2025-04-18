@@ -1,0 +1,82 @@
+*{
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    }
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #22100d;
+    --second-color:#685f78;
+    --main-color: #027bfe;
+    --big-font:3.4rem;
+    --h2-font:2.6rem;
+    --p-font:1.1rem;
+  }
+
+#nav1{
+    margin-left: 10px;
+  }
+  
+  #nav2{
+    margin-left: 220px;
+  }
+  
+  #nav2 li a,#nav3 li a{
+    font-weight: 500;
+    font-size: var(--p-font);
+  }
+
+
+.leaderboard {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mentor-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mentor-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.mentor-card .rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.mentor-card .stats {
+    margin-left: auto;
+    text-align: right;
+}
+.mentor-card .stats span {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+.view-button {
+padding: 5px 10px;
+background-color: #027bfe;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+margin-left: auto;
+}
+
+.view-button:hover {
+background-color: #025bb5;
+}

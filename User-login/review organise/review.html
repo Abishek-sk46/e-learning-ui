@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 60px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .icon i {
+        margin-right: 10px;
+      }
+
+      .rate{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      }
+
+      /* .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .rating i {
+        color: #ffc107;
+        font-size: 20px;
+        margin: 0 5px;
+      }
+
+      .rating i.inactive {
+        color: #ccc;
+      } */
+
+    
+
+      .rating>input{
+    display: none;
+}
+
+.rating>label::before{
+    content: '\f005';
+    font-family: fontawesome;
+    margin: 5px;
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+
+
+}
+
+.rating>.half::before{
+    content: '\f089';
+    position: absolute;
+
+    
+}
+.rating>label{
+    color: #ddd;
+    float: right;
+    transform: 2s;
+
+}
+.rating>input:checked ~ label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover ~label
+
+{
+    color: gold;
+}
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+
+      <h2>Course Completed!</h2>
+      <p>Thank you for completing the course. We value your feedback!</p>
+      <div class="rate">
+      <div class="rating">
+        <!-- <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star inactive"></i> -->
+        <input type="radio"  name="rating" id="star10" value="5">
+        <label for="star10" class="full" ></label>
+
+        <input type="radio"  name="rating" id="star9" value="4.5">
+        <label for="star9" class="half"></label>
+
+        <input type="radio"  name="rating" id="star8" value="4">
+        <label for="star8" class="full" ></label>
+
+        <input type="radio"  name="rating" id="star7" value="3.5">
+        <label for="star7" class="half" ></label>
+
+        <input type="radio"  name="rating" id="star6" value="3">
+        <label for="star6" class="full"></label>
+
+        <input type="radio"  name="rating" id="star5" value="2.5">
+        <label for="star5" class="half"></label>
+
+        <input type="radio"  name="rating" id="star4" value="2">
+        <label for="star4" class="full"></label>
+
+        <input type="radio"  name="rating" id="star3" value="1.5">
+        <label for="star3"class="half"></label>
+
+        <input type="radio"  name="rating" id="star2" value="1">
+        <label for="star2" class="full"></label>
+        
+        <input type="radio"  name="rating" id="star1" value="0.5">
+        <label for="star1" class="half"></label>
+
+       </div>
+       <p class="rating-value">Your Feedback</p>
+       </div>
+
+      <button
+        onclick="document.getElementById('reviewArea').style.display='block'"
+      >
+        Write a Review
+      </button>
+      <div id="reviewArea" style="display: none; margin-top: 20px">
+        <textarea
+          rows="4"
+          cols="50"
+          placeholder="Write your review here..."
+        ></textarea>
+        <br />
+        <button style="margin-top: 10px">Submit Review</button>
+    </div>
+      
+    </div>
+
+
+
+    <script >
+        let radioelement=document.querySelectorAll('input')
+const rating =document.querySelector('.rating-value')
+
+radioelement.forEach((radio)=>{
+    radio.addEventListener('click',()=>{
+
+    
+    let value=radio.value;
+    rating.innerText=`${value} of 5`;
+    })
+
+})
+    </script>
+  </body>
+</html>

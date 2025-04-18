@@ -1,0 +1,37 @@
+:root{
+  --bg-color: #ffffff;
+  --text-color: #22100d;
+  --second-color:#685f78;
+  --main-color: #027bfe;
+  --big-font:3.4rem;
+  --h2-font:2.6rem;
+  --p-font:1.1rem;
+}
+*{
+scroll-behavior: smooth;
+font-family: "Montserrat", sans-serif;
+}
+#nav1{
+  margin-left: 10px;
+}
+
+#nav2{
+  margin-left: 220px;
+}
+
+#nav2 li a,#nav3 li a{
+  font-weight: 500;
+  font-size: var(--p-font);
+}
+
+.endnav2{
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+.endnav2 li a{
+  margin-left: 10px;
+  color: var(--bg-color);
+}
+.endnav2 li a:hover{
+  color: rgb(194, 222, 247);
+}

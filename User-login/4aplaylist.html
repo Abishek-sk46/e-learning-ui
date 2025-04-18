@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+
+   
+    <link rel="stylesheet" href="4bplaylist.css">
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <li >
+            <span class="logo">Learning Track</span>
+            <button onclick=toggleSidebar() id="toggle-btn">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z"/></svg>
+            </button>
+        </li>
+        <!-- home -->
+        <li class="non">
+
+          <div class="learning-track">
+            <div class="track">Self learning<br>1% Completed</div>
+        </div>
+          
+        </li>
+
+        <!-- home ends -->
+
+
+        <!-- dashbord starts -->
+        
+
+        <!-- dashbord ends -->
+
+
+        <!--  create strats-->
+
+      
+        <li class="non">
+          <button onclick=toggleSubMenu(this) class="dropdown-btn">
+            
+            <span>Course Playlist</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+          </button>
+          <ul class="sub-menu">
+            <div>
+              <li><div class="playlist-item">
+                <div class="playlist-title">Web Design - Introduction</div>
+                <div class="playlist-duration">1:57</div>
+                <div><progress id="file" value="32" max="100"> 32% </progress></div>
+              </div></li>
+              <li><div class="playlist-item">
+                <div class="playlist-title">HTML</div>
+                <div class="playlist-duration">1:57</div>
+                <div><progress id="file" value="" max="100"> 0% </progress></div>
+              </div></li>
+              <li><div class="playlist-item">
+                <div class="playlist-title">CSS</div>
+                <div class="playlist-duration">1:57</div>
+                <div><progress id="file" value="" max="100"> 0% </progress></div>
+              </div></li>
+              <li><div class="playlist-item">
+                <div class="playlist-title">JAVASCRIPT</div>
+                <div class="playlist-duration">1:57</div>
+                <div><progress id="file" value="" max="100"> 0% </progress></div>
+              </div></li>
+              <li><div class="playlist-item">
+                <div class="playlist-title">DJANGO</div>
+                <div class="playlist-duration">1:57</div>
+                <div><progress id="file" value="" max="100"> 0% </progress></div>
+              </div></li>
+              <li><div class="playlist-item">
+                <div class="playlist-title">SIMPLE PROJECTS</div>
+                <div class="playlist-duration">1:57</div>
+                <div><progress id="file" value="" max="100"> 0% </progress></div>
+              </div></li>
+            </div>
+          </ul>
+        </li>
+
+      
+        <li class="non">
+          <a href="./5areview.html">
+            <span>Get Certificate</span>
+          </a>
+        </li>
+        
+        <li class="non">
+          <button onclick=toggleSubMenu(this) class="dropdown-btn">
+            <span>Course Information</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+          </button>
+          <ul class="sub-menu">
+            <div class="sub-item">
+              <li><a href="#"> Instructor: Wade Warren</a></li>
+              <li><a href="#">Ratings: ★★★★★</a></li>
+              <li><a href="#">Duration: 10 Days</a></li>
+              <li><a href="#">Lessons: 30</a></li>
+              <li><a href="#">Certificate: Yes</a></li>
+              <li><a href="#">Language: English</a></li>
+            </div>
+          </ul>
+        </li>
+
+
+
+
+        
+    </nav>
+    <main>
+       <iframe width="1150" height="700" class="video" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=XNhlWzv9gMMDRVPT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- <div class="video"></div> -->
+      </main>
+
+
+
+
+
+
+    <script  src="4cplaylist.js" ></script>
+
+  </body>
+</html>

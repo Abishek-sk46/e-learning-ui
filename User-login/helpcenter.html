@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center </title>
+    <link rel="stylesheet" href="helpcenter.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+/>
+   </head>
+<body>
+  <div class="shadow bg-body rounded">
+    <nav class="navbar navbar-expand-lg justify-content-between">
+      <a class="navbar-brand ms-4" id="nav1" href="#"
+        ><img
+          src="./images/logo.png"
+          alt=""
+          srcset=""
+          width="200"
+          height="50"
+      /></a>
+
+      <ul class="navbar-nav me-5" id="nav2">
+        <li class="nav-item active">
+          <a class="nav-link me-4 " href="./1home copy.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="./3acourse.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="./about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./helpcenter.html">Help Center</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav me-5 d-flex" id="nav3">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user" style="font-size: 20px;"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href="./profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li><a class="dropdown-item" href="./3acourse.html"><i class="fa-solid fa-book"></i> My Courses</a></li>
+            <li><a class="dropdown-item" href="./analytics.html"><i class="fa-solid fa-chart-simple"></i> Analytics</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item logout text-danger" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+          </ul>
+        </div>
+        <div class="endn">
+          <li class="nav-item ">
+            <a class="nav-link me-4" href="./notification.html"><i class="fa-regular fa-bell" style="font-size: 22px;"></i></a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+<header>
+    Help Center
+</header>
+
+<div class="container">
+    <div class="search-bar">
+        <input type="text" placeholder="Search for help...">
+    </div>
+
+    <!-- <div class="tabs">
+        <a href="#" class="active">FAQ</a>
+        <a href="#">Service</a>
+        <a href="#">General</a>
+        <a href="#">Contact Us</a>
+    </div> -->
+
+    <div class="tabs">
+        <button onclick="showFaq('all')" class="active">All</button>
+        <button onclick="showFaq('courses')">Courses</button>
+        <button onclick="showFaq('accounts')">Accounts</button>
+        
+        <button onclick="showFaq('services')">Service</button>
+        <button onclick="showFaq('general')">General</button>
+        <button onclick="showFaq('contact')">Contact Us</button>
+    </div>
+
+    <div class="faq" id="faq-container">
+        <div class="faq-item" data-category="courses">
+            <button onclick="toggleFaq(this)">Can I access my course offline? <span>&#9660;</span></button>
+            <div class="content">
+                Yes, you can download course materials and access them offline. This is great for learning on the go, especially when you don’t have an internet connection.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="courses">
+            <button onclick="toggleFaq(this)">How do I complete my course assessments? <span>&#9660;</span></button>
+            <div class="content">
+                Course assessments can be accessed via the "Assessments" section of your course dashboard. Submit them before the deadline for evaluation.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="accounts">
+            <button onclick="toggleFaq(this)">How do I reset my password? <span>&#9660;</span></button>
+            <div class="content">
+                To reset your password, click on "Forgot Password" on the login page and follow the instructions sent to your registered email.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="accounts">
+            <button onclick="toggleFaq(this)">How do I update my profile information? <span>&#9660;</span></button>
+            <div class="content">
+                You can update your profile information in the "Account Settings" section of your dashboard.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="payments">
+            <button onclick="toggleFaq(this)">What payment methods are accepted? <span>&#9660;</span></button>
+            <div class="content">
+                We accept various payment methods, including credit/debit cards, PayPal, and other secure payment gateways.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="payments">
+            <button onclick="toggleFaq(this)">How do I get a refund? <span>&#9660;</span></button>
+            <div class="content">
+                Refunds can be requested by contacting our support team through the "Contact Us" page, following our refund policy.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+            <button onclick="toggleFaq(this)">What additional services are provided? <span>&#9660;</span></button>
+            <div class="content">
+                We provide personalized learning plans, one-on-one mentoring, and access to exclusive workshops to enhance your learning experience.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+            <button onclick="toggleFaq(this)">How do I avail premium services? <span>&#9660;</span></button>
+            <div class="content">
+                Premium services can be availed by subscribing to our premium membership through the "Membership Plans" section.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+            <button onclick="toggleFaq(this)">What is the E-Learning platform? <span>&#9660;</span></button>
+            <div class="content">
+                Our E-Learning platform is an innovative solution designed to help students and professionals learn new skills online, with flexible courses and expert support.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+            <button onclick="toggleFaq(this)">Who can use the platform? <span>&#9660;</span></button>
+            <div class="content">
+                Anyone with a desire to learn can use the platform, whether you are a student, professional, or hobbyist looking to upskill.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="contact">
+            <button onclick="toggleFaq(this)">How do I contact support? <span>&#9660;</span></button>
+            <div class="content">
+                You can contact our support team through the "Contact Us" page by filling out the form or using the live chat option.
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="contact">
+            <button onclick="toggleFaq(this)">What are the support hours? <span>&#9660;</span></button>
+            <div class="content">
+                Our support team is available from 9 AM to 9 PM, Monday to Saturday. You can reach out during these hours for assistance.
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact " id="contact">
+    <div class="main-contact">
+      <div class="contact-content ">
+        <img src="./images/logofotter1.png" class="w-50 mb-2 " alt="">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </div>
+
+      <div class="contact-content">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+
+      <div class="contact-content">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Instructor</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </div>
+
+      <div class="contact-content">
+        <li><a href="#">San Francisco, <br> California, CA 94108</a></li>
+        <li><a href="#">brainup@gmail.com</a></li>
+        <li><a href="#">01646895741</a></li>
+      </div>
+
+    </div>
+   
+
+   <div class="last-text">
+    <p>© 2024 abishek. All rights reserved</p>
+   </div>
+   </section>
+
+<script src="heplcenter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+/>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+  <link rel="stylesheet" href="./assets/css/universenav.css" />
+  <link rel="stylesheet" href="./mainprofile.css">
+  
+ 
+</head>
+<body>
+    
+    
+  <div class="shadow bg-body rounded">
+    <nav class="navbar navbar-expand-lg justify-content-between">
+      <a class="navbar-brand ms-4" id="nav1" href="#"
+        ><img
+          src="./images/logo.png"
+          alt=""
+          srcset=""
+          width="200"
+          height="50"
+      /></a>
+
+      <ul class="navbar-nav me-5" id="nav2">
+        <li class="nav-item active">
+          <a class="nav-link me-4" href="./1home copy.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="./3acourse.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="./about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./helpcenter.html">Help Center</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav me-5 d-flex" id="nav3">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user" style="font-size: 20px;"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li><a class="dropdown-item" href="./mylearning.html"><i class="fa-solid fa-book"></i> My Courses</a></li>
+            <li><a class="dropdown-item" href="./analytics.html"><i class="fa-solid fa-chart-simple"></i> Analytics</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item logout text-danger" href="./1home.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+          </ul>
+        </div>
+        <div class="endnav2">
+          <li class="nav-item signup">
+            <a class="nav-link me-4" href="./notification.html"><i class="fa-regular fa-bell" style="font-size: 22px;"></i></a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+         
+  
+
+  <section class="profile">
+    <div class="profile-header">
+      <img src="./images/mentorr1.png" alt="Mentor Profile Picture">
+      <h2>John Doe</h2>
+      
+      <a href="./profile.html"><button class="remove-button">Edit</button></a>
+    </div>
+    
+    <!-- Basic Information -->
+    <div class="basic-info text-center">
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Location:</strong>Coimbatore</p>
+      <p><strong>Email:</strong> john.doe@example.com</p>
+      <p><strong>Phone No:</strong> +1 234 567 890</p>
+    </div>
+    
+    <!-- Profile Details -->
+    <div class="container mt-4">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="card text-center">
+                  <div class="card-body">
+                      <h5 class="card-title">Courses Completed</h5>
+                      <p class="card-text fs-3">20</p>
+                      <a href="./mentorcourse.html" class="btn btn-primary">View Courses</a>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="col-md-6">
+              <div class="card text-center">
+                  <div class="card-body">
+                      <h5 class="card-title">In Progress</h5>
+                      <p class="card-text fs-3">2</p>
+                      <a href="./mentorcourseactivity.html" class="btn btn-primary">Continue</a>
+                  </div>
+              </div>
+          </div>
+    
+          <!-- <div class="col-md-4">
+              <div class="card text-center">
+                  <div class="card-body">
+                      <h5 class="card-title">Mentor Leadboard</h5>
+                      <p class="card-text">10/200 </p>
+                      <a href="./leadboard.html" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div> -->
+      </div>
+    </div>
+    </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+  </html>

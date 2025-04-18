@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="3bcourse.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+/>
+</head>
+<body>
+<!-- main navbar -->
+<div class="shadow bg-body rounded">
+  <nav class="navbar navbar-expand-lg justify-content-between">
+    <a class="navbar-brand ms-4" id="nav1" href="#"
+      ><img
+        src="./images/logo.png"
+        alt=""
+        srcset=""
+        width="200"
+        height="50"
+    /></a>
+    <ul class="navbar-nav me-5" id="nav2">
+      <li class="nav-item ">
+        <a class="nav-link me-4 " href="./1home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-4 active" href="./3acourse.html">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-4" href="./about.html">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./helpcenter.html">Help Center</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav me-5 d-flex" id="nav3">
+      <div class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-user" style="font-size: 20px;"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+          <li><a class="dropdown-item" href="./profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
+          <li><a class="dropdown-item" href="./3acourse.html"><i class="fa-solid fa-book"></i> My Courses</a></li>
+          <li><a class="dropdown-item" href="./analytics.html"><i class="fa-solid fa-chart-simple"></i> Analytics</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item logout text-danger" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+      </div>
+      <div class="endn">
+        <li class="nav-item ">
+          <a class="nav-link me-4" href="#"><i class="fa-regular fa-bell" style="font-size: 22px;"></i></a>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</div>
+
+<!-- top -->
+<div class="btns">
+  <div class="main-btn">
+    <a href="./3acourse.html" class="nbtn text-decoration-none">Courses</a>
+  </div>
+  <div class="main-btn">
+    <a href="./mylearning.html" class="pbtn text-decoration-none">My Learning</a>
+  </div>
+</div>
+
+<!-- search bar -->
+<div class="container">
+  <div class="search-bar">
+      <input type="text" placeholder="Search courses...">
+      <select>
+          <option value="">All Categories</option>
+          <option value="development">Development</option>
+          <option value="design">Design</option>
+          <option value="marketing">Marketing</option>
+      </select>
+      <select>
+          <option value="">All Levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+      </select>
+      <button>Search</button>
+  </div>
+</div>
+
+<div class="products-slider-with-price">
+  <section class="container-fluid">
+    <section class="courses" id="courses">
+      <div class="mt-1 d-flex">
+        <button class="me-3 std mb-3" style="width:20px; height: 45px;"></button>
+        <h2 class="text fw-semibold">POPULAR COURSES</h2>
+      </div>
+      <div class="courses-content">
+        <div class="row">
+          <img src="./images/IMG-DSA.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG-CRACK.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG-machine leraning.jpg" alt="" />
+          <div class="courses-text">
+            <a href="./4aplaylist.html"><h3>The Complete HTML CSS JS Course 2024</h3></a>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/DALL·E 2024-12-08 18.55.41 - A vibrant thumbnail image for an HTML, CSS, and JavaScript tutorial. The design includes a laptop displaying code on its screen, surrounded by symbols.webp" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="products-slider-with-price">
+    <section class="courses" id="courses">
+      <div class="mt-1 d-flex">
+        <button class="me-3 std mb-3" style="width:20px; height: 45px;"></button>
+        <h2 class="text fw-semibold">PROGRAMMING LANGUAGES</h2>
+      </div>
+      <div class="courses-content">
+        <div class="row">
+          <img src="./images/IMG-c++.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG-JAVA.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG-PYTHON.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/GO.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="products-slider-with-price">
+    <section class="courses" id="courses">
+      <div class="mt-1 d-flex">
+        <button class="me-3 std mb-3" style="width:20px; height: 45px;"></button>
+        <h2 class="text fw-semibold">TOP COURSES</h2>
+      </div>
+      <div class="courses-content">
+        <div class="row">
+          <img src="./images/IMG-FLUTTER.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG-REACT.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG_DJANGO.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./images/IMG_DATASCIENCE.jpg" alt="" />
+          <div class="courses-text">
+            <h3>The Complete HTML CSS JS Course 2024</h3>
+            <h6>05 hours 15 minutes</h6>
+            <div class="rating">
+              <div class="star">
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+                <a href="#"><i class="bx bxs-star"></i></a>
+              </div>
+              <div class="review">
+                <p>5 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="btns">
+    <div class="main-btn">
+      <a href="#" class="pbtn text-decoration-none">Previous</a>
+    </div>
+    <div class="main-btn">
+      <a href="#" class="nbtn text-decoration-none">Next</a>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="main-contact">
+      <div class="contact-content">
+        <img src="./images/logofotter1.png" class="w-50 mb-2" alt="">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </div>
+      <div class="contact-content">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="contact-content">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Instructor</a></li>
+        <li><a href="#">Dashboard</a></li>
+     </div>
+    </div>
+   
+
+    <div class="last-text">
+     <p>© 2024 abishek. All rights reserved</p>
+    </div>
+    </section>   
+    </body>
+    </html>

@@ -1,0 +1,144 @@
+:root{
+    --bg-color: #ffffff;
+    --text-color: #22100d;
+    --second-color:#685f78;
+    --main-color: #027bfe;
+    --big-font:3.4rem;
+    --h2-font:2.6rem;
+    --p-font:1.1rem;
+  }
+  *{
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #nav1{
+    margin-left: 10px;
+  }
+  
+  #nav2{
+    margin-left: 220px;
+  }
+  
+  #nav2 li a,#nav3 li a{
+    font-weight: 500;
+    font-size: var(--p-font);
+  }
+  
+  .endnav2{
+    background-color: var(--main-color);
+    border-radius: 15px;
+  }
+  .endnav2 li a{
+    margin-left: 10px;
+    color: var(--bg-color);
+  }
+  .endnav2 li a:hover{
+    color: rgb(194, 222, 247);
+  }
+
+
+.main {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.google-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-button img {
+    margin-right: 10px;
+}
+
+.google-button:hover {
+    background-color: #f7f7f7;
+}
+
+.signup-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.endnav2{
+    background-color: var(--main-color);
+    border-radius: 15px;
+  }
+  .endnav2 li a{
+    margin-left: 10px;
+    color: var(--bg-color);
+  }
+  .endnav2 li a:hover{
+    color: rgb(194, 222, 247);
+  }

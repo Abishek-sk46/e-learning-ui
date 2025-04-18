@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+      scroll-behavior: smooth;
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  
+  :root{
+    --bg-color: #ffffff;
+    --text-color: #22100d;
+    --second-color:#685f78;
+    --main-color: #027bfe;
+    --big-font:3rem;
+    --h2-font:2rem;
+    --p-font:1.1rem;
+  }
+  
+  
+  #nav1{
+    margin-left: 10px;
+  }
+  
+  #nav2{
+    margin-left: 220px;
+  }
+  
+  #nav2 li a,#nav3 li a{
+    font-weight: 500;
+    font-size: var(--p-font);
+  }
+  
+ .application{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 5% 10%;
+    padding: 5%;
+    
+ }
+
+ .cardu{
+    padding: 4% 13%;
+ }
+
+ .contact{
+    padding: 30px 11% 10px;
+    
+    background-color: #1E2641;
+    margin-top: 100px;
+  }
+  .main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px,auto));
+    gap: 2rem;
+  
+  }
+  
+  .conatct-content img{
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+    margin-bottom: 30px;
+  
+  }
+  
+  .contact-content li{
+    margin-bottom: 18px;
+  
+  }
+  .contact-content li a{
+    display: block;
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 15px;
+    transition: all .40s ease;
+    text-decoration: none !important;
+  
+  }
+  .contact-content li a:hover{
+    transform: translateX(10px);
+    color: var(--main-color);
+  }
+  
+  .last-text p{
+    text-align: center;
+    padding: 18px;
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .cardu h5{
+    letter-spacing: 2px;
+  }
+
+  .card >span{
+    font-size: 5px !important;
+  }

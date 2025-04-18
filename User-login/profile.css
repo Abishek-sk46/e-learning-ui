@@ -1,0 +1,168 @@
+:root{
+  --bg-color: #ffffff;
+  --text-color: #22100d;
+  --second-color:#685f78;
+  --main-color: #027bfe;
+  --big-font:3.4rem;
+  --h2-font:2.6rem;
+  --p-font:1.1rem;
+}
+
+*{
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  }
+
+#nav1{
+  margin-left: 10px;
+}
+
+#nav2{
+  margin-left: 220px;
+}
+
+#nav2 li a,#nav3 li a{
+  font-weight: 500;
+  font-size: var(--p-font);
+}
+
+/* .endnav2{
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+.endnav2 li a{
+  margin-left: 10px;
+  color: var(--bg-color);
+}
+.endnav2 li a:hover{
+  color: rgb(194, 222, 247);
+} */
+    
+    
+    
+    .profile {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5fbfe;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    .form-container {
+        background: linear-gradient(to bottom, #87d1f4, #f4f6fa);
+      width: 90%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .profile-icon {
+      width: 80px;
+      height: 80px;
+      background-color: #e5e9f2;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .profile-icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .edit-icon {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      background-color: #00b894;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .input-field {
+      background-color: #f9fafe;
+      border: 1px solid #e0e4ed;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 10px 0;
+      width: calc(100% - 30px);
+      font-size: 14px;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .input-field:focus {
+      border-color: #4a90e2;
+    }
+
+    .select-field {
+      display: flex;
+      align-items: center;
+      background-color: #f9fafe;
+      border: 1px solid #e0e4ed;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 10px 0;
+      font-size: 14px;
+      width: calc(100% - 30px);
+      box-sizing: border-box;
+    }
+
+    .select-field img {
+      width: 20px;
+      height: 15px;
+      margin-right: 10px;
+    }
+
+    .select-field select {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 14px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .select-field input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 14px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .continue-btn {
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      width: calc(100% - 40px);
+      box-sizing: border-box;
+    }
+
+    .continue-btn i {
+      margin-left: 10px;
+    }
+
+    .continue-btn:hover {
+      background-color: #357abd;
+    }
